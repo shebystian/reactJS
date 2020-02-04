@@ -40,10 +40,8 @@ const element =(
     <button id="btnAceptar" class ="btn btn-success">Aceptar</button>
   </div>
   )
-  const element2 = "chupalo ql";
+
   const container = document.getElementById('root'); 
 
-// ReactDOM.render(___que,__donde)
-
+// ReactDOM.render(__que__,__donde__)
  ReactDOM.render(element,container);
- ReactDOM.render(element2, container);
