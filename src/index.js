@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //para visualizar el logo:
 import logo from './logo.svg';
+import Card from './components/Cards'
 
 //import librerias bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -44,4 +45,7 @@ const element =(
   const container = document.getElementById('root'); 
 
 // ReactDOM.render(__que__,__donde__)
- ReactDOM.render(element,container);
+
+//ReactDOM.render(element,container);
+
+ReactDOM.render(<Card/>, container)
