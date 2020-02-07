@@ -44,8 +44,17 @@ const element =(
 
   const container = document.getElementById('root'); 
 
-// ReactDOM.render(__que__,__donde__)
+//ReactDOM.render(__que__,__donde__)
 
 //ReactDOM.render(element,container);
 
-ReactDOM.render(<Card/>, container)
+//ReactDOM.render(<Card/>, container)
+
+/* ejemplo de como mandar mas propiedades a un componente*/
+ReactDOM.render(<Card
+                    title="Technique Guides"
+                    description="Learn amazing street travel"
+                    img=""
+                    leftColor="#A74CF2"
+                    rightColor="#617BFB"
+                />, container)
