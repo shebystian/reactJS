@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //para visualizar el logo:
 import logo from './logo.svg';
-import Card from './components/Cards'
+import Card from './components/Cards';
 
 //import librerias bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+//import Welcome from './components/Welcome';
+
+// video 15.
+import Exercises from './pages/Exercises';
+
+
 
 
 const user = {
@@ -51,10 +57,20 @@ const element =(
 //ReactDOM.render(<Card/>, container)
 
 /* ejemplo de como mandar mas propiedades a un componente*/
-ReactDOM.render(<Card
+/*
+ReactDOM.render(
+                <div>
+                <Welcome
+                  username = "Seba"
+                ></Welcome>
+                <Card
                     title="Technique Guides"
                     description="Learn amazing street travel"
                     img=""
                     leftColor="#A74CF2"
                     rightColor="#617BFB"
-                />, container)
+                />
+                </div>, container)
+*/
+/*ejemplo video 15. */
+ReactDOM.render(<Exercises/>, container)
