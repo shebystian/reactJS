@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../components/Cards';
+
+import Card from '../components/Card';
 import Welcome from '../components/Welcome'
-import ExercisesList from '../components/ExercisesList';
 
 class Exercises extends React.Component {
     constructor(props) {
@@ -35,10 +35,11 @@ class Exercises extends React.Component {
     }
     render(){
         return (
-            /* esto iba antes ahora se listara desde ExercisesList
+            /* esto iba antes ahora se listara desde ExercisesList*/
+            
             <div>
             <Welcome
-                username = "Seba"
+                username="Seba"
             />
                 { this.state.data.map((exercise) => {
                     return(
@@ -52,7 +53,8 @@ class Exercises extends React.Component {
                     })
                 }
             </div>
-            */
+            
+           /*
            <div>
                 <Welcome
                     username = "Seba"
@@ -61,6 +63,7 @@ class Exercises extends React.Component {
                     exercises = {this.state.data}
                 />
             </div>
+            */
         )
     }
 }
